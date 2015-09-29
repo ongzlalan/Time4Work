@@ -39,14 +39,9 @@ public class Tasks {
   setTaskID(taskID);
  }
  
- //for updating
- public Tasks(int taskID, Tasks task) {
-	 setTaskID(taskID);
- }
- 
  //for exiting and invalid command
  public Tasks(){
-	 
+  
  }
  
  //select a blocked timeslot as final, position starts from 1 (arraylist[0])

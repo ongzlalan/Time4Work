@@ -105,7 +105,9 @@ public class Time4WorkParser {
       Tasks task;
       int taskID = Integer.parseInt(arguments.get(0));
       
-      task = new Tasks(taskID, createTaskListForAddingOrUpdating(getUserArguments(arguments)));
+      task = createTaskListForAddingOrUpdating(getUserArguments(arguments));
+      task.setTaskID(taskID);
+      
       command = new Command("update", task);
       
       return command;
