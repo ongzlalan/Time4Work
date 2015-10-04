@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+public class Command {
+  
+  private Task task;
+    private String command;
+    
+  public Command(String command, Task task) {
+        this.scanCurrentDirOnly = false;
+        this.fileTypes = new ArrayList<String>();
+        this.type = type;
+    }
+
+    public Type getCommandType() {
+        return type;
+    }
+
+
+    // ================================================================
+    // "Collate" command methods
+    // ================================================================
+
+    public String getDirectory() {
+        return directory;
+    }
+
+    public void setDirectory(String directory) {
+        this.directory = directory;
+    }
+
+    public boolean willScanCurrentDirOnly() {
+        return scanCurrentDirOnly;
+    }
+
+    public void setScanCurrentDirOnly(boolean scanCurrentDirOnly) {
+        this.scanCurrentDirOnly = scanCurrentDirOnly;
+    }
